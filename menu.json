@@ -1,0 +1,182 @@
+[
+    {
+      "id": "the-gramercy-tavern-burger-4-pack",
+      "img": "  burger-1.png",
+      "name": " Bacon Burger",
+      "dsc": "The Gramercy Tavern Burger - 4 Pack",
+      "price": 99,
+      "rate": 5,
+      "country": "New York, NY",
+      "category": "burger"
+    },
+    {
+      "id": "shake-shack-shackburger-8-pack",
+      "img": "  burger-2.png",
+      "name": "Cheeseburger",
+      "dsc": "Shake Shack ShackBurger® – 8 Pack",
+      "price": 49,
+      "rate": 5,
+      "country": "New York, NY",
+      "category": "burger"
+    },
+    {
+      "id": "gotts-cheeseburger-kit-for-4",
+      "img": "  burger-3.png",
+      "name": "Mushroom Swiss",
+      "dsc": "Gott's Complete Cheeseburger Kit for 4",
+      "price": 99,
+      "rate": 5,
+      "country": "St. Helena, CA",
+      "category": "burger"
+    },
+    {
+      "id": "le-big-matt-kit-for-6",
+      "img": "  burger-4.png",
+      "name": "Spicy Jalapeño ",
+      "dsc": "Le Big Matt Burger Kit for 6",
+      "price": 99,
+      "rate": 5,
+      "country": "Brooklyn, NY",
+      "category": "burger"
+    },
+    {
+      "id": "shake-shack-shackburger-16-pack",
+      "img": "  burger-5.png",
+      "name": "Double  Delight",
+      "dsc": "Shake Shack Shackburger® – 16 Pack",
+      "price": 89,
+      "rate": 4,
+      "country": "New York, NY",
+      "category": "burger"
+    },
+    {
+      "id": "wagyu-burger-patties-12-pack",
+      "img": "  burger-6.png",
+      "name": "Ultimate Truffle ",
+      "dsc": "Wagyu Burger Patties - 12 Pack",
+      "price": 129,
+      "rate": 5,
+      "country": "Queensland, Australia",
+      "category": "burger"
+    },
+
+
+
+
+
+    
+        {
+          "id": "15428-pittsburgh-party-pack",
+          "img": "  beverage-1.png",
+          "name": "Banana Milk Shake",
+          "dsc": "Banana Milk Shake",
+          "price": 89,
+          "rate": 4,
+          "country": "Pittsburgh, PA",
+          "category": "beaverge"
+        },
+        {
+          "id": "pastrami-burnt-end-sandwich-kit",
+          "img": "  beverage-2.png",
+          "name": "Mixed Berry ",
+          "dsc": "Ugly Buns \"Burnt End\" Sandwich Kit - 6 Pack",
+          "price": 109,
+          "rate": 5,
+          "country": "Los Angeles, CA",
+          "category": "beaverge"
+        },
+        {
+          "id": "favorite-sloppy-joe-sandwich",
+          "img": "  beverage-3.png",
+          "name": "Sweet Smoothie",
+          "dsc": "Favorite Sloppy Joe Sandwich",
+          "price": 79,
+          "rate": 5,
+          "country": "South Orange, NJ",
+          "category": "beaverge"
+        },
+        {
+          "id": "sandwich-best-sellers-4-pack",
+          "img": "  beverage-4.png",
+          "name": "Orangeade",
+          "dsc": "Italian Sandwich Kit Best Sellers - 4 Pack",
+          "price": 99,
+          "rate": 5,
+          "country": "New York, NY",
+          "category": "beaverge"
+        },
+        {
+          "id": "15504-original-muffuletta-sandwich-pack",
+          "img": "  beverage-5.png",
+          "name": "Red Punch",
+          "price": 149,
+          "rate": 5,
+          "country": "New Orleans, LA",
+          "category": "beaverge"
+        },
+
+
+
+
+
+            {
+              "id": "6-lou-malnatis-deep-dish-pizzas",
+              "img": "  snack-1.png",
+              "name": "French Fries",
+              "dsc": "6 Lou Malnati's Deep Dish Pizzas",
+              "price": 116.99,
+              "rate": 4,
+              "country": "Chicago, IL",
+              "category": "snack"
+            },
+            {
+              "id": "wood-fired-pizzas-best-seller-4-pack",
+              "img": "  snack-2.png",
+              "name": " Alu Fries",
+              "dsc": "Wood Fired Pizzas Best Seller - 4 Pack",
+              "price": 129,
+              "rate": 5,
+              "country": "Phoenix, AZ",
+              "category": "snack"
+            },
+            {
+              "id": "236991-choose-your-own-deep-dish-pizza-3-pack",
+              "img": "  snack-3.png",
+              "name": "Nachos Sanwich",
+              "dsc": "Choose Your Own Deep Dish Pizza - 3 Pack",
+              "price": 139,
+              "rate": 5,
+              "country": "Chicago, IL",
+              "category": "snack"
+            },
+            {
+              "id": "choose-your-own-detroit-style-pizza-3-pack",
+              "img": "  snack-4.png",
+              "name": "Emmy Hot Chips",
+              "dsc": "Detroit-Style Pizza - Choose Your Own 3 Pack",
+              "price": 89,
+              "rate": 4,
+              "country": "Brooklyn, NY",
+              "category": "snack"
+            },
+            {
+              "id": "brooklyn-pizza-choose-your-own-5-pack",
+              "img": "  snack-5.png",
+              "name": "Paesan’s Fries",
+              "dsc": "Brooklyn Pizza - Choose Your Own 5 Pack",
+              "price": 69,
+              "rate": 4,
+              "country": "Albany, NY",
+              "category": "snack"
+            },
+            {
+              "id": "choose-your-own-chicago-deep-dish-pizza-4-pack",
+              "img": "  snack-6.png",
+              "name": "Tacos PopCorn",
+              "dsc": "Chicago Deep Dish Pizza - 4 Pack",
+              "price": 129,
+              "rate": 5,
+              "country": "Chicago, IL",
+              "category": "snack"
+            }
+]

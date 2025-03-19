@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            #preloader {
+      background:#000 url('cargando.gif') no-repeat center center;
+      background-size: 15%;
+      top:0;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      z-index: 9999;
+    }
+        </style>
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        
+        <style type="text/tailwindcss">
+    
+            @layer utilities {
+               
+                html {
+                    @apply selection:bg-[bg-yellow-300] scroll-smooth;
+
+                }
+              body {
+                @apply text-white;
+              }
+              .child{
+                @apply w-[300px] h-[300px] flex flex-col justify-center items-center gap-4 md:w-[250px];
+               
+              }
+              .name{
+                    @apply text-3xl font-bold;
+                }
+                .image{
+                    @apply w-[150px] h-[200px];
+                }
+                .shop{
+                    @apply flex justify-around w-[100%] items-center;
+                }
+                .price{
+                 @apply   text-xl font-bold;
+                }
+                .shop-btn{
+                  @apply  text-lg font-bold  p-[8px] rounded-lg hover:bg-yellow-400 hover:border-0 transition duration-[0.5s];
+                }
+                
+    
+            }
+          </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Burger</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+        <script src="https://cdn.tailwindcss.com"></script>
+       
+        <script>
+            
+            tailwind.config = {
+    
+                
+                theme: {
+                    
+                    extend: {
+                        
+                        colors: {
+                            clifford: '#da373d',
+                        },
+                        fontFamily: {
+                            custom: ['"nunito"', 'sans-serif'],
+                        },
+                        
+                    }
+                    
+                }
+            }
+        </script>
+
+
+</style>
+    </head>
+<body class="bg-[#010e62]">
+
+    <div id="preloader" ></div>
+      <!--header-->
+      <header class="bg-[#010e62] text-white fixed top-[0] w-[100vw]  border-b border-b-yellow-300">
+        <nav class="flex justify-around items-center p-[10px]">
+            <!-- logo-->
+            <div><span class="text-3xl font-bold ">BUR</span><span
+                    class="text-yellow-300 font-bold text-3xl ">GER</span>
+            </div>
+
+
+
+
+            <!-- menu links-->
+
+            <div id="pages"
+                class="hidden   absolute top-[3rem] right-0 left-0 bg-[#010e62]  transition-opacity ease-linear duration-[2s] md:flex md:static">
+                <ul class="flex flex-col gap-2 font-medium !text-center p-[15px] md:flex-row md:gap-8">
+                    <li
+                        class="hover:text-yellow-300 cursor-pointer text-bold text-xl transition-colors ease-linear duration-[0.5s]">
+                        <a href="index.html">Home</a></li>
+                    <li
+                        class="hover:text-yellow-300 text-bold cursor-pointer text-xl transition-colors ease-linear duration-[0.5s]">
+                        <a href="about.html">About</a></li>
+                        <li
+                        class="hover:text-yellow-300 text-bold cursor-pointer text-xl transition-colors ease-linear duration-[0.5s]">
+                        <a href="menu.html">Menu</a></li>
+                    
+                    <li
+                        class="hover:text-yellow-300 text-bold cursor-pointer text-xl transition-colors ease-linear duration-[0.5s]">
+                        <a href="contact.html">Contact</a></li></li>
+                </ul>
+
+            </div>
+
+            <!-- menu buttons-->
+
+            <div class="flex gap-4">
+                <button id="dark" onclick="dark()"> <i class="ri-moon-line text-2xl"></i></button>
+                <button id="light" onclick="light()" class="hidden"> <i class="ri-sun-line text-2xl"></i></button>
+
+                <button id="menu" onclick="show()"> <i class="ri-menu-line text-2xl md:hidden"></i></button>
+                
+
+                <button id="Close" class=" hidden " onclick="hide()"> <i class="ri-close-line text-2xl"></i></button>
+
+
+            </div>
+
+        </nav>
+
+
+    </header>
+    
+
+
+
+
+    <section class="h-[200px] bg-yellow-400 mt-[5vh] flex justify-center items-center">
+        <h1 class="font-bold text-4xl">Menu</h1>
+
+    </section>
+
+
+
+    
+    <section id="menu">
+        <div  class=" flex mt-[2vh] flex-col gap-4 justify-center items-center">
+            <h1 class="text-3xl font-bold">OUR MENU</h1>
+            <hr class="border-0 h-1 bg-yellow-300 w-[180px]">
+            <p class="text-center text-lg font-medium">Discover a wide range of delicious options crafted to satisfy every taste. </p>
+
+
+            <div class=" tabs flex gap-5">
+
+
+                <div class=" tab tab1 bg-[#00137e] p-[15px] rounded-lg ">
+                    <button class="tab-btn text-2xl font-bold" onclick="changecolor(this)">Burger</button>
+                </div>
+                <div class="tab tab2 bg-[#00137e] p-[15px] rounded-lg ">
+                    <button class="tab-btn tab tab2 text-2xl font-bold" onclick="changecolor(this)">Beverage</button>
+                </div>
+                <div class="tab tab3 bg-[#00137e] p-[15px] rounded-lg ">
+                    <button class="tab-btn text-2xl font-bold" onclick="changecolor(this)">Snacks</button>
+                </div>
+            </div>
+
+            <div
+                class="items p-[10px] grid grid-cols-1 gap-8 justify-center items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="h-[100px]"></div>
+
+    <section
+        class="bg-[#ffc400] p-[20px]  w-[100%] flex justify-around gap-8 items-center flex-col md:h-[200px] md:flex-row">
+        <div class="md:w-[40vw]">
+            <h1 class="text-4xl font-bold  text-left sm:text-center">GET EXCLUSIVE UPDATE</h1>
+            <p class="text-xl text-left sm:text-center">Stay informed with the latest news and updates directly from us.</p>
+        </div>
+        <div class="md:w-[40vw] ">
+
+            <input type="email" required
+                class="  pt-[6px] pl-[5px]  w-[300px] pb-[7px] focus:border-0 text-black text-2xl focus:outline-none focus:caret-black focus:caret-2px focus:cursor-text">
+
+
+                <button onclick="setTimeout(() => {
+                    document.querySelector('#thanks').style.display = 'block'
+                }, 1000); 
+
+                setTimeout(() => {
+                    document.querySelector('#thanks').style.display = 'none'
+                }, 5000); 
+                " ;
+                class="mt-[10px] bg-black p-[8px] text-xl text-white">
+                <i class="fa-solid fa-paper-plane"></i> Subscribe
+            </button>
+            <p id="thanks" class="text-xl font-semibold text-left hidden">Thanks for subscribing</p>
+            
+                
+
+        </div>
+       
+    </section>
+
+
+    <!--section 7-->
+    <section
+        class="footer bg-[#010e60] p-[10px] pt-[40px] pb-[40px] grid grid-cols-1  gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:justify-items-center lg:pl-[120px] lg:pr-[80px]  lg:h-[300px]">
+        <div class="f1 flex flex-col gap-4">
+            <div><span class="text-3xl font-bold ">BUR</span><span
+                    class="text-yellow-300 font-bold text-3xl ">GER</span>
+            </div>
+            <p class="text-lg font-medium font-custom"> Indulge in a variety of freshly prepared dishes,
+                crafted with the finest ingredients. 
+                Our cozy atmosphere and exceptional service ensure an unforgettable dining experience.</p>
+
+        </div>
+        <div class="f2 flex flex-col gap-2">
+            <h1 class="text-2xl font-bold">Support</h1>
+            <a href="" class="text-md font-medium hover:text-yellow-300">FAQ's</a>
+            <a href="" class="text-md font-medium hover:text-yellow-300">Privacy Policy</a>
+            <a href="" class="text-md font-medium hover:text-yellow-300">Terms & Conditions</a>
+            <a href="" class="text-md font-medium hover:text-yellow-300">Contact</a>
+        </div>
+        <div class="f3 flex flex-col gap-2">
+            <h1 class="text-2xl font-bold">Phone</h1>
+            <div>
+                <a href="" class="text-md font-medium hover:text-yellow-300"><i class="fa-solid fa-phone"></i></a>
+                <a href="" class="text-md font-medium hover:text-yellow-300">+91 123456789</a>
+            </div>
+            <h1 class="text-2xl font-bold">E-Mail</h1>
+            <div>
+                <a href="" class="text-md font-medium hover:text-yellow-300"><i class="fa-solid fa-envelope"> </i></a>
+                <a href="" class="text-md font-medium hover:text-yellow-300"> burger@.co.in</a>
+            </div>
+        </div>
+        <div class="f4 flex flex-col gap-2">
+            <h1 class="text-2xl font-bold">Address</h1>
+            <div>
+                <a href="" class="text-md font-medium hover:text-yellow-300"><i
+                        class="fa-solid fa-location-dot"></i></a>
+                <a href="" class="text-md font-medium hover:text-yellow-300">Guntur</a>
+            </div>
+
+            <h1 class="text-2xl font-bold">Follow Us</h1>
+            <div class="flex gap-4">
+                <a href="" class="text-md font-medium hover:text-yellow-300"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="text-md font-medium hover:text-yellow-300"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="text-md font-medium hover:text-yellow-300"><i class="fa-brands fa-facebook"></i></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    
+    <div class="fixed right-[30px] bottom-[25px]">
+        <button id="top-btn" class=" hidden bg-yellow-400 text-white  w-[45px] h-[45px] rounded-full shadow-lg text-2xl">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+
+
+
+
+
+
+    <script src="./common.js"></script>
+    <script src="./menu.js"></script>
+
+    <script>
+        let loader=document.getElementById("preloader");
+window.addEventListener("load",()=>{
+  loader.style.display="none";
+})
+    </script>
+  
+</body>
+</html>
